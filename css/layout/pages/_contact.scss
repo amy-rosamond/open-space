@@ -1,0 +1,60 @@
+@use "../../components/animation" as *;
+@use "../../components/mixins" as *;
+
+.contact-box {
+    &-container {
+        @include flexbox($justifyContent: center);
+    }
+
+    &-wrapper {
+        @include flexbox($justifyContent: center, $wrap: wrap);
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    @include flexbox($placeItems: center, $direction: column);
+    max-width: 550px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 35px 20px;
+    position: relative;
+    z-index: 2;
+
+    &-bottom {
+        background-color: var(--dark-grey);
+        // bottom: 45px;
+        margin-top: -25px;
+        z-index: 1;
+    }
+
+    svg {
+        width: 50px;
+        stroke: var(--secondary);
+    }
+
+    p {
+        text-align: center;
+        margin: 0;
+    }
+
+    &-social {
+        @include flexbox($justifyContent: center);
+
+        a {
+            @include flexbox($placeContent: center);
+            background-color: var(--secondary);
+            @include backgroundFromBottomBlack;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 10px;
+            cursor: pointer;
+
+            i {
+                font-size: 24px;
+                color: var(--black);
+            }
+        }
+    }
+}

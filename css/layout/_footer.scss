@@ -1,0 +1,97 @@
+@use "../components/animation" as *;
+@use "../components/mixins" as *;
+
+footer {
+    @include flexbox($justifyContent: space-evenly, $wrap: wrap);
+    padding: 20px 20px;
+    background-color: var(--primary);
+    border-top: 2px solid var(--black);
+    margin-top: 30px;
+
+    img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    nav {
+        @include flexbox($direction: column);
+        max-width: 300px;
+        width: 100%;
+        padding: 10px 0px;
+        position: relative;
+        z-index: 999999;
+
+        h3 {
+            font-size: 22px;
+            margin: 0px 10px 5px;
+            padding: 10px 5px;
+            border-bottom: 2px solid var(--black);
+        }
+
+        a,
+        p {
+            @include flexbox($alignItems: center);
+            font-size: 18px;
+            max-width: 280px;
+            // text-align: center;
+            width: 100%;
+            margin: 0px 10px;
+            // background-image: url(../../img/icons/tape.png);
+            padding: 10px 5px;
+            border-radius: 3px;
+            font-weight: 400;
+            @include backgroundFromLeft;
+            // justify-content: center;
+
+            strong {
+                letter-spacing: 1px;
+                color: var(--secondary);
+                font-weight: 400;
+            }
+
+            svg {
+                stroke: var(--secondary);
+                width: 27px;
+                margin-right: 9px;
+            }
+
+            i {
+                font-size: 30px;
+                color: var(--secondary);
+                margin-right: 5px;
+            }
+
+            // &:hover {
+            //     color: var(--black);
+            //     background-size: 100% 100%;
+
+            //     strong,
+            //     i,
+            //     span {
+            //         color: var(--black);
+            //     }
+
+            //     svg {
+            //         stroke: var(--black);
+            //     }
+            // }
+        }
+
+        p {
+            @include flexbox($justifyContent: space-between);
+        }
+    }
+
+    div {
+        @include flexbox($justifyContent: center);
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+
+        img {
+            max-width: 700px;
+            width: 100%;
+            opacity: 0.1;
+        }
+    }
+}

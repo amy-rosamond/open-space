@@ -1,0 +1,89 @@
+@use '../components/animation' as *;
+@use '../components/mixins' as *;
+
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--black);
+    letter-spacing: .5px;
+    transition: all .3s ease-in-out;
+}
+
+html,
+body {
+    background-color: var(--background);
+    // background-image: var(--background-img);
+    // background-size: cover;
+    margin: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+a {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &:hover {
+        text-decoration: none;
+        color: rgb(254 115 105);
+    }
+}
+
+// a tag buttons
+.a-button,
+button {
+    font-family: "BIZ UDPMincho", serif;
+    @include flexbox($placeContent: center, $placeItems: center);
+    padding: 10px 30px;
+    color: var(--black);
+    background-color: var(--secondary);
+    border-radius: 4rem;
+    // border: 0px solid var(--black);
+    font-size: 20px;
+    @include backgroundFromBottomBlack;
+    margin: 10px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+button {
+    border: 0px solid var(--black);
+}
+
+//LENIS
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
