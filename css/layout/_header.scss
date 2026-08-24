@@ -4,26 +4,21 @@
 header {
     @include flexbox($justifyContent: space-evenly);
     // 15 top for responsive time & date
-    padding: 15px 20px 5px;
+    padding: 15px 20px 15px;
     // margin-bottom: 20px;
     background-color: var(--primary);
     border-bottom: 2px solid var(--black);
 
-    img {
-        max-width: 350px;
-        width: 100%;
-    }
-
     nav {
         @include flexbox($placeContent: center);
-        max-width: 1100px;
+        max-width: 400px;
         width: 100%;
         padding: 10px 0px;
         flex-wrap: wrap;
     
         a {
             @include flexbox($placeContent: center, $placeItems: center);
-            font-size: 22px;
+            font-size: 20px;
             max-width: 180px;
             width: 100%;
             height: 50px;
@@ -35,18 +30,28 @@ header {
 
             svg {
                 stroke: var(--secondary);
-                width: 25px;
+                width: 23px;
                 margin-right: 5px;
             }
         }
 
         .active {
-            background-color: var(--dark-grey);
+            background-color: var(--grey);
             color: var(--secondary);
 
             svg {
                 stroke: var(--secondary);
             }
+        }
+    }
+
+    div {
+        @include flexbox($placeContent: center, $placeItems: center);
+        margin-inline: 20px;
+
+        img {
+            max-width: 250px;
+            width: 100%;
         }
     }
 

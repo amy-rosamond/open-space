@@ -5,7 +5,7 @@ include('includes/projects-array.php');
 include('includes/projects-class.php');
 include('header.php');
 
-echo '<div class="container container-dark" style="margin-top:0px;">
+echo '<div class="container container-grey" style="margin-top:0px;">
     <h1 id="projects">Projects</h1>
     <p data-aos="flip-right" data-aos-duration="500">Check out all our hard work here at ' . Company::NAME->value . '.</p>
 </div>';
@@ -29,7 +29,7 @@ echo '<div class="container container-dark" style="margin-top:0px;">
 
 // ARRAY
 foreach ($kitchensInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -50,7 +50,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($doorsInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -71,7 +71,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($roofsInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -92,7 +92,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($joineryInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -113,7 +113,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($frameworkInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -134,7 +134,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($secondFixInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -154,7 +154,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($flooringInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -175,7 +175,7 @@ echo '</div><div class="project-back-to-top"><a href="#projects" class="a-button
 
 // ARRAY
 foreach ($constructionInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark">
+    echo '<div id="' . $b['id'] . '" class="container container-grey">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';

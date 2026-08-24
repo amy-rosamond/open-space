@@ -1,20 +1,20 @@
 <?php
 
 enum Company: string{
-    case NAME = 'BL Carpentry & Constuction LTD';
-    case TEL = '+447899 028965';
-    case EMAIL = 'bl.carpentryandconstruction24@gmail.com';
+    case NAME = 'Open Space Construction Ltd';
+    case TEL = '+447855 657 274';
+    case EMAIL = 'info@openspaceltd.co.uk';
 
-    case INSTA = '@bl_carpentryandconstructionltd';
-    case INSTALINK = 'https://www.instagram.com/bl_carpentryandconstructionltd/';
+    case INSTA = '@open-space-insta';
+    case INSTALINK = 'instalink';
     case INSTAICON = '<i class="bx bxl-instagram"></i>';
     
-    case FB = '@bl_carpentryandconstructionltdfb';
-    case FBLINK = 'https://www.facebook.com/bl.carpentry.construction.ltd';
+    case FB = '@open-space-fb';
+    case FBLINK = 'fblink';
     case FBICON = '<i class="bx bxl-facebook"></i>';
     
-    case IN = '@bl_carpentryandconstructionltdin';
-    case INLINK = 'link3';
+    case IN = '@open-space-in';
+    case INLINK = 'linkedinlink';
     case INICON = '<i class="bx bxl-linkedin"></i>';
 }
 

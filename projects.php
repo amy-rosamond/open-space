@@ -4,7 +4,7 @@ include('includes/variables.php');
 include('includes/projects-array.php');
 include('header.php');
 
-echo '<div class="container container-dark" style="margin-top:0px;">
+echo '<div class="container container-grey" style="margin-top:0px;">
     <h1 id="projects">Projects</h1>
     <p data-aos="flip-right" data-aos-duration="500">Check out all our hard work here at ' . Company::NAME->value . '.</p>
 </div>';
@@ -29,7 +29,7 @@ echo '<div class="container container-dark" style="margin-top:0px;">
 // refurbishment
 // array
 foreach ($refurbInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -57,13 +57,15 @@ echo '';
 </div>
 
 
-<div class="container container-dark container-overlap container-projects-img">
+<div class="container container-grey container-overlap container-projects-img">
     <div class="project-images" data-aos="slide-up" data-aos-duration="500">
         <a class="prev" onclick="plusSlides(-1)">
             <!-- &#10094; -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
+
+
         </a>
 
         <div class="refurbChorleywoodImages fade">
@@ -111,8 +113,9 @@ echo '';
         <a class="next" onclick="plusSlides(1)">
             <!-- &#10095; -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
+
         </a>
     </div>
 
@@ -142,7 +145,7 @@ echo '';
 // conversions
 // array
 foreach ($conversionsInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -169,13 +172,15 @@ echo '';
     </div>
 </div>
 
-<div class="container container-dark container-overlap container-projects-img">
+<div class="container container-grey container-overlap container-projects-img">
     <div class="project-images" data-aos="slide-up" data-aos-duration="500">
         <a class="prev" onclick="plusSlides2(-1)">
             <!-- &#10094; -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
+
+
         </a>
 
         <div class="conversionChingfordImages fade">
@@ -217,8 +222,9 @@ echo '';
         <a class="next" onclick="plusSlides2(1)">
             <!-- &#10095; -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
+
         </a>
     </div>
 

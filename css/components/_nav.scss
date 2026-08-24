@@ -28,16 +28,15 @@
             border-radius: 3px;
             font-weight: 400;
             text-align: center;
-            border: 1px solid var(--dark-grey);
-            background-color: var(--dark-grey);
-            background-image: linear-gradient(var(--white), var(--white));
-            background-position: 100% 0%;
+            border: 1px solid var(--grey);
+            background-image: linear-gradient(var(--grey), var(--grey));
+            background-position: 50% 50%;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: 0% 0%;
             color: var(--black);
 
             &:hover {
-                background-size: 100% 0%;
+                background-size: 100% 100%;
                 color: var(--secondary);
 
                 svg {

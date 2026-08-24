@@ -41,7 +41,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: rgb(254 115 105);
+        color: var(--black);
     }
 }
 
@@ -51,7 +51,7 @@ button {
     font-family: "BIZ UDPMincho", serif;
     @include flexbox($placeContent: center, $placeItems: center);
     padding: 10px 30px;
-    color: var(--black);
+    color: var(--white);
     background-color: var(--secondary);
     border-radius: 4rem;
     // border: 0px solid var(--black);
@@ -61,7 +61,12 @@ button {
     font-weight: 600;
     text-align: center;
     cursor: pointer;
+
+    i {
+        color: var(--white);
+    }
 }
+
 button {
     border: 0px solid var(--black);
 }

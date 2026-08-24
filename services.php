@@ -10,7 +10,7 @@ include('includes/services-array.php');
 include('includes/services-class.php');
 include('header.php');
 
-echo '<div id="backToTop" class="container container-dark" style="margin-top:0px;">
+echo '<div id="backToTop" class="container container-grey" style="margin-top:0px;">
     <h1>Services</h1>
     <p data-aos="flip-right" data-aos-duration="500">All we can offer here at ' . Company::NAME->value . '.</p>
 </div>';
@@ -34,7 +34,7 @@ echo '<div id="backToTop" class="container container-dark" style="margin-top:0px
 // KITCHENS
 // array
 foreach ($kitchensInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -56,7 +56,11 @@ foreach ($kitchensInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    // echo '</div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -68,7 +72,7 @@ foreach ($kitchensInfo as $b) {
 // DOORS
 // array
 foreach ($doorsInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -90,7 +94,10 @@ foreach ($doorsInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -102,7 +109,7 @@ foreach ($doorsInfo as $b) {
 // ROOFS
 // array
 foreach ($roofsInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -124,7 +131,10 @@ foreach ($roofsInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -136,7 +146,7 @@ foreach ($roofsInfo as $b) {
 // JOINERY
 // array
 foreach ($joineryInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -158,7 +168,10 @@ foreach ($joineryInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -170,7 +183,7 @@ foreach ($joineryInfo as $b) {
 // framework
 // array
 foreach ($frameworkInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -192,7 +205,10 @@ foreach ($frameworkInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -204,7 +220,7 @@ foreach ($frameworkInfo as $b) {
 // secondFix
 // array
 foreach ($secondFixInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -226,7 +242,10 @@ foreach ($secondFixInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -238,7 +257,7 @@ foreach ($secondFixInfo as $b) {
 // flooring
 // array
 foreach ($flooringInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -260,7 +279,10 @@ foreach ($flooringInfo as $b) {
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 
@@ -272,7 +294,7 @@ foreach ($flooringInfo as $b) {
 // construction
 // array
 foreach ($constructionInfo as $b) {
-    echo '<div id="' . $b['id'] . '" class="container container-dark" style="padding-top: 60px;">
+    echo '<div id="' . $b['id'] . '" class="container container-grey" style="padding-top: 60px;">
     <h2 data-aos="flip-right" data-aos-duration="500">' . $b['title'] . '</h2>
     <p data-aos="flip-right" data-aos-duration="500">' . $b['info'] . '</p>
 </div>';
@@ -294,7 +316,10 @@ s
         echo $service->displayOutput();
     }
 
-    echo '</div><div class="service-back-to-top"><a href="#backToTop" class="a-button">Back to top</a></div>';
+    echo '</div><div class="service-back-to-top"><a href="#backToTop">Back to top&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+    </a></div>';
 
     ?>
 

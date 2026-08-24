@@ -58,6 +58,6 @@
     </nav>
 
 
-    <div><img src="img/logos/bl-logo-footer.png" alt="<?= Company::NAME->value; ?>"></div>
+    <div><img src="img/logos/open-space.png" alt="<?= Company::NAME->value; ?>"></div>
 
 </footer>

@@ -6,9 +6,9 @@ include('includes/about-class.php');
 include('includes/about-array.php');
 
 
-echo '<div class="container container-dark" style="margin-top:0px;">
+// <p data-aos="flip-right" data-aos-duration="500">Everything ' . Company::NAME->value . '.</p>
+echo '<div class="container container-grey" style="margin-top:0px;">
     <h1>About Us</h1>
-    <p data-aos="flip-right" data-aos-duration="500">Everything ' . Company::NAME->value . '.</p>
     <p data-aos="flip-right" data-aos-duration="500">As a family-run company, we understand the significance of trust and the importance of creating spaces that families can truly call home. </p>
 </div>';
 
@@ -28,7 +28,7 @@ echo '<div class="container container-dark" style="margin-top:0px;">
 
 <?php
 
-echo '<div class="container container-dark container-img">
+echo '<div class="container container-grey container-img">
     <img src="img/website/front-door.jpg">
 </div>';
 
@@ -41,7 +41,7 @@ echo '<div id="approach" class="container container-overlap">
     </div>
 </div>';
 
-echo '<div class="container container-dark container-img">
+echo '<div class="container container-grey container-img">
     <img src="img/website/window-plant.jpg">
 </div>';
 
@@ -52,7 +52,7 @@ echo '<div id="services" class="container container-overlap">
     </div>
 </div>';
 
-echo '<div class="container container-dark container-img">
+echo '<div class="container container-grey container-img">
     <img src="img/website/sink.jpg">
 </div>';
 

@@ -24,16 +24,19 @@
             }
 
             a {
-                width: 55px;
+                width: 50px;
                 cursor: pointer;
+                height: 200px;
+                @include flexbox($placeItems: center);
+                border-radius: 3px;
 
                 svg {
                     width: 50px;
                     stroke: var(--secondary);
+                }
 
-                    &:hover {
-                        stroke: rgb(181, 104, 0);
-                    }
+                &:hover {
+                    background-color: #e4e2e2;
                 }
             }
         }
@@ -48,6 +51,7 @@
             @include flexbox($placeItems: center, $direction: column);
             border-radius: 5px;
             background-color: var(--white);
+            border: 1px solid var(--secondary);
             max-width: 300px;
             width: 100%;
             padding: 20px 10px;

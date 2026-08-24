@@ -22,14 +22,14 @@
 
     &:hover {
         background-size: 100% 100%;
-        color: var(--black);
+        color: var(--grey);
 
         svg {
-            stroke: var(--black);
+            stroke: var(--grey);
         }
 
         i {
-            color: var(--black);
+            color: var(--grey);
         }
     }
 }
@@ -62,17 +62,17 @@
     color: var(--black);
 
     &:hover {
-        color: var(--black);
+        color: var(--white);
         background-size: 100% 100%;
 
         strong,
         i,
         span {
-            color: var(--black);
+            color: var(--white);
         }
 
         svg {
-            stroke: var(--black);
+            stroke: var(--white);
         }
     }
 }

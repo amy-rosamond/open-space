@@ -4,7 +4,19 @@
 .service {
     &-back-to-top {
         @include flexbox($placeContent: center, $placeItems: center);
-        margin: 20px 0px 40px;
+        margin: 20px 30px 40px;
+        position: absolute;
+        // left: 30px;
+        font-size: 14px;
+
+        a {
+            @include flexbox($placeContent: center, $placeItems: center);
+        }
+
+        svg {
+            color: var(--secondary);
+            width: 18px;
+        }
     }
 }
 
@@ -18,7 +30,7 @@
         @include flexbox($placeContent: center, $placeItems: center);
         margin-top: 30px;
         padding: 30px 0px;
-        background-color: var(--dark-grey);
+        background-color: var(--grey);
     }
 
     &-wrapper {
@@ -36,7 +48,7 @@
         width: 100%;
 
         .process:last-child {
-            background-color: var(--dark-grey);
+            background-color: var(--grey);
         }
     }
 
@@ -75,7 +87,7 @@
         div {
             @include flexbox($placeContent: center, $placeItems: center);
             position: absolute;
-            background-color: var(--dark-grey);
+            background-color: var(--grey);
             border-radius: 50%;
             width: 80px;
             height: 80px;
@@ -93,7 +105,7 @@
 
     &-svg {
         @include flexbox($placeContent: center, $placeItems: center);
-        background-color: var(--dark-grey);
+        background-color: var(--grey);
         padding: 15px;
         border-radius: 50%;
 

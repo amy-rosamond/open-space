@@ -84,16 +84,15 @@
   border-radius: 3px;
   font-weight: 400;
   text-align: center;
-  border: 1px solid var(--dark-grey);
-  background-color: var(--dark-grey);
-  background-image: linear-gradient(var(--white), var(--white));
-  background-position: 100% 0%;
+  border: 1px solid var(--grey);
+  background-image: linear-gradient(var(--grey), var(--grey));
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 0% 0%;
   color: var(--black);
 }
 .nav nav a:hover {
-  background-size: 100% 0%;
+  background-size: 100% 100%;
   color: var(--secondary);
 }
 .nav nav a:hover svg {
@@ -103,6 +102,92 @@
   color: var(--black);
 }
 
+.slanted-btn {
+  display: flex;
+  justify-content: center;
+}
+.slanted-btn .cta {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+  flex-wrap: nowrap;
+  align-self: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: var(--white);
+  background: var(--secondary);
+  transition: 1s;
+  box-shadow: 6px 6px 0 var(--black);
+  transform: skewX(-15deg);
+}
+.slanted-btn svg {
+  width: 40px !important;
+}
+.slanted-btn .cta:focus {
+  outline: none;
+}
+.slanted-btn .cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #FBC638;
+}
+.slanted-btn .cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+.slanted-btn .cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+.slanted-btn span {
+  transform: skewX(15deg);
+  color: var(--white);
+}
+.slanted-btn span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+.slanted-btn {
+  /**************SVG****************/
+}
+.slanted-btn path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+.slanted-btn path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+.slanted-btn .cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+.slanted-btn .cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+.slanted-btn .cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+.slanted-btn {
+  /* SVG animations */
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #FBC638;
+  }
+  100% {
+    fill: white;
+  }
+}
 /* The Modal (background) */
 .modal {
   display: none;
@@ -196,7 +281,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: rgb(254, 115, 105);
+  color: var(--black);
 }
 
 .a-button,
@@ -208,7 +293,7 @@ button {
   place-items: center;
   flex-wrap: nowrap;
   padding: 10px 30px;
-  color: var(--black);
+  color: var(--white);
   background-color: var(--secondary);
   border-radius: 4rem;
   font-size: 20px;
@@ -236,6 +321,10 @@ button {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
+}
+.a-button i,
+button i {
+  color: var(--white);
 }
 
 button {
@@ -289,6 +378,8 @@ html.lenis body {
 .container h3,
 .container p {
   text-align: center;
+  max-width: 1100px;
+  width: 100%;
 }
 .container-overlap {
   position: relative;
@@ -309,8 +400,8 @@ html.lenis body {
 .container-clear {
   padding: 30px 20px 60px;
 }
-.container-dark {
-  background-color: var(--dark-grey);
+.container-grey {
+  background-color: var(--grey);
   padding: 30px 20px 60px;
   margin-top: -20px;
 }
@@ -329,20 +420,16 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  padding: 15px 20px 5px;
+  padding: 15px 20px 15px;
   background-color: var(--primary);
   border-bottom: 2px solid var(--black);
-}
-header img {
-  max-width: 350px;
-  width: 100%;
 }
 header nav {
   display: flex;
   flex-direction: row;
   place-content: center;
   flex-wrap: nowrap;
-  max-width: 1100px;
+  max-width: 400px;
   width: 100%;
   padding: 10px 0px;
   flex-wrap: wrap;
@@ -353,7 +440,7 @@ header nav a {
   place-content: center;
   place-items: center;
   flex-wrap: nowrap;
-  font-size: 22px;
+  font-size: 20px;
   max-width: 180px;
   width: 100%;
   height: 50px;
@@ -369,25 +456,37 @@ header nav a {
 }
 header nav a:hover {
   background-size: 100% 100%;
-  color: var(--black);
+  color: var(--grey);
 }
 header nav a:hover svg {
-  stroke: var(--black);
+  stroke: var(--grey);
 }
 header nav a:hover i {
-  color: var(--black);
+  color: var(--grey);
 }
 header nav a svg {
   stroke: var(--secondary);
-  width: 25px;
+  width: 23px;
   margin-right: 5px;
 }
 header nav .active {
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
   color: var(--secondary);
 }
 header nav .active svg {
   stroke: var(--secondary);
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+  flex-wrap: nowrap;
+  margin-inline: 20px;
+}
+header div img {
+  max-width: 250px;
+  width: 100%;
 }
 header .date-time {
   display: flex;
@@ -438,7 +537,7 @@ footer nav {
   z-index: 999999;
 }
 footer nav h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0px 10px 5px;
   padding: 10px 5px;
   border-bottom: 2px solid var(--black);
@@ -449,7 +548,7 @@ footer nav p {
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 280px;
   width: 100%;
   margin: 0px 10px;
@@ -464,7 +563,7 @@ footer nav p {
 }
 footer nav a:hover,
 footer nav p:hover {
-  color: var(--black);
+  color: var(--white);
   background-size: 100% 100%;
 }
 footer nav a:hover strong,
@@ -473,11 +572,11 @@ footer nav a:hover span,
 footer nav p:hover strong,
 footer nav p:hover i,
 footer nav p:hover span {
-  color: var(--black);
+  color: var(--white);
 }
 footer nav a:hover svg,
 footer nav p:hover svg {
-  stroke: var(--black);
+  stroke: var(--white);
 }
 footer nav a strong,
 footer nav p strong {
@@ -488,12 +587,12 @@ footer nav p strong {
 footer nav a svg,
 footer nav p svg {
   stroke: var(--secondary);
-  width: 27px;
+  width: 25px;
   margin-right: 9px;
 }
 footer nav a i,
 footer nav p i {
-  font-size: 30px;
+  font-size: 28px;
   color: var(--secondary);
   margin-right: 5px;
 }
@@ -515,7 +614,7 @@ footer div {
 footer div img {
   max-width: 700px;
   width: 100%;
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 .contact-box-container {
@@ -547,7 +646,7 @@ footer div img {
   z-index: 2;
 }
 .contact-box-bottom {
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
   margin-top: -25px;
   z-index: 1;
 }
@@ -594,7 +693,7 @@ footer div img {
 }
 .contact-box-social a i {
   font-size: 24px;
-  color: var(--black);
+  color: var(--white);
 }
 
 .container-projects-img {
@@ -625,15 +724,21 @@ footer div img {
   margin: 20px;
 }
 .container-projects-img .project-images a {
-  width: 55px;
+  width: 50px;
   cursor: pointer;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  flex-wrap: nowrap;
+  border-radius: 3px;
 }
 .container-projects-img .project-images a svg {
   width: 50px;
   stroke: var(--secondary);
 }
-.container-projects-img .project-images a svg:hover {
-  stroke: rgb(181, 104, 0);
+.container-projects-img .project-images a:hover {
+  background-color: #e4e2e2;
 }
 .container-projects-info {
   display: flex;
@@ -650,6 +755,7 @@ footer div img {
   flex-wrap: nowrap;
   border-radius: 5px;
   background-color: var(--white);
+  border: 1px solid var(--secondary);
   max-width: 300px;
   width: 100%;
   padding: 20px 10px;
@@ -727,7 +833,7 @@ footer div img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(var(--secondary), var(--secondary));
+  background-image: linear-gradient(var(--grey), var(--grey));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -757,7 +863,20 @@ footer div img {
   place-content: center;
   place-items: center;
   flex-wrap: nowrap;
-  margin: 20px 0px 40px;
+  margin: 20px 30px 40px;
+  position: absolute;
+  font-size: 14px;
+}
+.service-back-to-top a {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+  flex-wrap: nowrap;
+}
+.service-back-to-top svg {
+  color: var(--secondary);
+  width: 18px;
 }
 
 .process-container {
@@ -768,7 +887,7 @@ footer div img {
   flex-wrap: nowrap;
   margin-top: 30px;
   padding: 30px 0px;
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
 }
 .process-wrapper {
   display: flex;
@@ -797,7 +916,7 @@ footer div img {
   width: 100%;
 }
 .process-row .process:last-child {
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
 }
 .process-row:nth-child(odd) .process:first-child {
   border-top-left-radius: 3px;
@@ -836,7 +955,7 @@ footer div img {
   place-items: center;
   flex-wrap: nowrap;
   position: absolute;
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -854,7 +973,7 @@ footer div img {
   place-content: center;
   place-items: center;
   flex-wrap: nowrap;
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
   padding: 15px;
   border-radius: 50%;
 }
@@ -868,13 +987,13 @@ footer div img {
 }
 
 :root {
-  --background: #fff;
+  --background: #1b2355;
   --background-img: url(../img/bg/wood-bg.jpg);
   --primary: #fff;
-  --secondary: #303f9c;
+  --secondary: #1b2355;
   --white: #fff;
   --black: #191919;
-  --grey: #f2f2f2;
-  --dark-grey: #f6f6f6;
+  --grey: #f6f6f6;
+  --dark-grey: #f2f2f2;
   --fontfamily-BIZ: 'BIZ UDPMincho', serif;
 }/*# sourceMappingURL=styles.css.map */

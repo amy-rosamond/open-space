@@ -23,7 +23,7 @@
     z-index: 2;
 
     &-bottom {
-        background-color: var(--dark-grey);
+        background-color: var(--grey);
         // bottom: 45px;
         margin-top: -25px;
         z-index: 1;
@@ -53,7 +53,7 @@
 
             i {
                 font-size: 24px;
-                color: var(--black);
+                color: var(--white);
             }
         }
     }

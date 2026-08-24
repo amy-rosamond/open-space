@@ -1,6 +1,7 @@
 @use "../css/components/animista";
 @use "../css/components/nav";
 
+@use "../css/general/buttons";
 @use "../css/general/modals";
 @use "../css/general/tags";
 @use "../css/general/text";
@@ -16,15 +17,15 @@
 @use "../css/layout/pages/services";
 
 :root {
-    --background: #fff;
+    --background: #1b2355;
     --background-img: url(../img/bg/wood-bg.jpg);
     --primary: #fff;
-    // --secondary: #1b2355;
-    --secondary: #303f9c;
+    --secondary: #1b2355;
+    // --secondary: #2f3a7d;
     --white: #fff;
     --black: #191919;
-    --grey: #f2f2f2;
-    --dark-grey: #f6f6f6;
+    --grey: #f6f6f6;
+    --dark-grey: #f2f2f2;
     --fontfamily-BIZ: 'BIZ UDPMincho', serif;
 
 
