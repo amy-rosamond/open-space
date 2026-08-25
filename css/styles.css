@@ -66,7 +66,7 @@
   flex-wrap: wrap;
   border-radius: 5px;
   padding: 10px;
-  border: 1px double var(--secondary);
+  border: 1px double var(--primary);
 }
 .nav nav a {
   display: flex;
@@ -75,7 +75,7 @@
   place-items: center;
   flex-wrap: nowrap;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 16px;
   width: -moz-fit-content;
   width: fit-content;
   min-width: 180px;
@@ -84,8 +84,8 @@
   border-radius: 3px;
   font-weight: 400;
   text-align: center;
-  border: 1px solid var(--grey);
-  background-image: linear-gradient(var(--grey), var(--grey));
+  border: 1px solid var(--secondary);
+  background-image: linear-gradient(var(--secondary), var(--secondary));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 0%;
@@ -93,7 +93,7 @@
 }
 .nav nav a:hover {
   background-size: 100% 100%;
-  color: var(--secondary);
+  color: var(--primary);
 }
 .nav nav a:hover svg {
   stroke: var(--black);
@@ -118,7 +118,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   color: var(--white);
-  background: var(--secondary);
+  background: var(--primary);
   transition: 1s;
   box-shadow: 6px 6px 0 var(--black);
   transform: skewX(-15deg);
@@ -198,7 +198,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 .modal-content {
   display: flex;
@@ -224,7 +224,7 @@
 }
 .modal-close {
   float: right;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 50%;
   padding: 3px;
   display: flex;
@@ -243,7 +243,7 @@
   cursor: pointer;
 }
 .modal-close:hover svg, .modal-close:focus svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 
 * {
@@ -264,9 +264,32 @@ body {
   height: 100%;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1,
+h2 {
+  letter-spacing: 1px;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
 p {
   line-height: 24px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 strong {
@@ -274,7 +297,7 @@ strong {
 }
 
 a {
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 1px;
@@ -294,7 +317,7 @@ button {
   flex-wrap: nowrap;
   padding: 10px 30px;
   color: var(--white);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 4rem;
   font-size: 20px;
   background-image: linear-gradient(var(--black), var(--black));
@@ -304,16 +327,16 @@ button {
 }
 .a-button:hover,
 button:hover {
-  color: var(--secondary);
+  color: var(--primary);
   background-size: 100% 100%;
 }
 .a-button:hover i,
 button:hover i {
-  color: var(--secondary);
+  color: var(--primary);
 }
 .a-button:hover svg,
 button:hover svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 .a-button,
 button {
@@ -362,25 +385,6 @@ html.lenis body {
   position: relative;
   z-index: 1;
 }
-.container h1 {
-  font-size: 36px;
-}
-.container h2 {
-  font-size: 30px;
-}
-.container h1,
-.container h2 {
-  letter-spacing: 1px;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-.container h1,
-.container h2,
-.container h3,
-.container p {
-  text-align: center;
-  max-width: 1100px;
-  width: 100%;
-}
 .container-overlap {
   position: relative;
   z-index: 5;
@@ -421,7 +425,7 @@ header {
   justify-content: space-evenly;
   flex-wrap: nowrap;
   padding: 15px 20px 15px;
-  background-color: var(--primary);
+  background-color: var(--white);
   border-bottom: 2px solid var(--black);
 }
 header nav {
@@ -440,15 +444,15 @@ header nav a {
   place-content: center;
   place-items: center;
   flex-wrap: nowrap;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 180px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin: 3px 10px;
   border-radius: 3px;
   font-weight: 400;
   text-align: center;
-  background-image: linear-gradient(var(--secondary), var(--secondary));
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 2%;
@@ -456,25 +460,25 @@ header nav a {
 }
 header nav a:hover {
   background-size: 100% 100%;
-  color: var(--grey);
+  color: var(--white);
 }
 header nav a:hover svg {
-  stroke: var(--grey);
+  stroke: var(--white);
 }
 header nav a:hover i {
-  color: var(--grey);
+  color: var(--white);
 }
 header nav a svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
   width: 23px;
   margin-right: 5px;
 }
 header nav .active {
   background-color: var(--grey);
-  color: var(--secondary);
+  color: var(--primary);
 }
 header nav .active svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 header div {
   display: flex;
@@ -482,7 +486,7 @@ header div {
   place-content: center;
   place-items: center;
   flex-wrap: nowrap;
-  margin-inline: 20px;
+  margin: 15px 20px;
 }
 header div img {
   max-width: 250px;
@@ -504,7 +508,7 @@ header .date-time div {
   text-align: center;
 }
 header .date-time div:nth-child(2) {
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 900;
 }
 header .date-time div:nth-child(3) {
@@ -518,7 +522,7 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 20px 20px;
-  background-color: var(--primary);
+  background-color: var(--white);
   border-top: 2px solid var(--black);
   margin-top: 30px;
 }
@@ -555,7 +559,7 @@ footer nav p {
   padding: 10px 5px;
   border-radius: 3px;
   font-weight: 400;
-  background-image: linear-gradient(var(--secondary), var(--secondary));
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -581,19 +585,19 @@ footer nav p:hover svg {
 footer nav a strong,
 footer nav p strong {
   letter-spacing: 1px;
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 400;
 }
 footer nav a svg,
 footer nav p svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
   width: 25px;
   margin-right: 9px;
 }
 footer nav a i,
 footer nav p i {
   font-size: 28px;
-  color: var(--secondary);
+  color: var(--primary);
   margin-right: 5px;
 }
 footer nav p {
@@ -652,7 +656,7 @@ footer div img {
 }
 .contact-box svg {
   width: 50px;
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 .contact-box p {
   text-align: center;
@@ -669,21 +673,21 @@ footer div img {
   flex-direction: row;
   place-content: center;
   flex-wrap: nowrap;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   background-image: linear-gradient(var(--black), var(--black));
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 0%;
 }
 .contact-box-social a:hover {
-  color: var(--secondary);
+  color: var(--primary);
   background-size: 100% 100%;
 }
 .contact-box-social a:hover i {
-  color: var(--secondary);
+  color: var(--primary);
 }
 .contact-box-social a:hover svg {
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 .contact-box-social a {
   padding: 10px;
@@ -735,7 +739,7 @@ footer div img {
 }
 .container-projects-img .project-images a svg {
   width: 50px;
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 .container-projects-img .project-images a:hover {
   background-color: #e4e2e2;
@@ -762,7 +766,7 @@ footer div img {
 }
 .container-projects-info .projects-info h3 {
   margin-bottom: 0px;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .dot1,
@@ -800,7 +804,7 @@ footer div img {
 }
 .service-card h2 {
   margin-top: 30px;
-  color: var(--secondary);
+  color: var(--primary);
 }
 .service-card-img {
   position: relative;
@@ -818,7 +822,7 @@ footer div img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 400;
   width: 100%;
   height: 100%;
@@ -841,7 +845,7 @@ footer div img {
 }
 .service-card-img:hover .service-card-img-info {
   visibility: visible;
-  color: var(--secondary) !important;
+  color: var(--primary) !important;
   background-size: 100% 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -875,7 +879,7 @@ footer div img {
   flex-wrap: nowrap;
 }
 .service-back-to-top svg {
-  color: var(--secondary);
+  color: var(--primary);
   width: 18px;
 }
 
@@ -904,7 +908,7 @@ footer div img {
   flex-wrap: nowrap;
   width: 100%;
   padding: 20px;
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 .process-row {
   display: flex;
@@ -944,7 +948,7 @@ footer div img {
   place-items: center;
   flex-wrap: nowrap;
   width: 2px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   position: relative;
   align-self: stretch;
 }
@@ -959,10 +963,10 @@ footer div img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--primary);
 }
 .process-count div h3 {
-  color: var(--secondary);
+  color: var(--primary);
   margin: 0;
   font-size: 40px;
   font-weight: 900;
@@ -979,7 +983,7 @@ footer div img {
 }
 .process-svg svg {
   width: 45px;
-  stroke: var(--secondary);
+  stroke: var(--primary);
 }
 .process h2,
 .process p {
@@ -989,11 +993,11 @@ footer div img {
 :root {
   --background: #1b2355;
   --background-img: url(../img/bg/wood-bg.jpg);
-  --primary: #fff;
-  --secondary: #1b2355;
+  --primary: #1b2355;
+  --secondary: #fc6f64;
   --white: #fff;
   --black: #191919;
-  --grey: #f6f6f6;
+  --grey: #d4d5d5;
   --dark-grey: #f2f2f2;
   --fontfamily-BIZ: 'BIZ UDPMincho', serif;
 }/*# sourceMappingURL=styles.css.map */

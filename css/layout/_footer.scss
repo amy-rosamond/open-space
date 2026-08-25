@@ -4,7 +4,7 @@
 footer {
     @include flexbox($justifyContent: space-evenly, $wrap: wrap);
     padding: 20px 20px;
-    background-color: var(--primary);
+    background-color: var(--white);
     border-top: 2px solid var(--black);
     margin-top: 30px;
 
@@ -45,19 +45,19 @@ footer {
 
             strong {
                 letter-spacing: 1px;
-                color: var(--secondary);
+                color: var(--primary);
                 font-weight: 400;
             }
 
             svg {
-                stroke: var(--secondary);
+                stroke: var(--primary);
                 width: 25px;
                 margin-right: 9px;
             }
 
             i {
                 font-size: 28px;
-                color: var(--secondary);
+                color: var(--primary);
                 margin-right: 5px;
             }
 

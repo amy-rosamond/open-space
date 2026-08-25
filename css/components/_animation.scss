@@ -14,7 +14,7 @@
 }
 
 @mixin backgroundFromBottomUnderline {
-    background-image: linear-gradient(var(--secondary), var(--secondary));
+    background-image: linear-gradient(var(--primary), var(--primary));
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 100% 2%;
@@ -22,14 +22,14 @@
 
     &:hover {
         background-size: 100% 100%;
-        color: var(--grey);
+        color: var(--white);
 
         svg {
-            stroke: var(--grey);
+            stroke: var(--white);
         }
 
         i {
-            color: var(--grey);
+            color: var(--white);
         }
     }
 }
@@ -41,21 +41,21 @@
     background-size: 100% 0%;
 
     &:hover {
-        color: var(--secondary);
+        color: var(--primary);
         background-size: 100% 100%;
 
         i {
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         svg {
-            stroke: var(--secondary);
+            stroke: var(--primary);
         }
     }
 }
 
 @mixin backgroundFromLeft {
-    background-image: linear-gradient(var(--secondary), var(--secondary));
+    background-image: linear-gradient(var(--primary), var(--primary));
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 100%;

@@ -15,7 +15,7 @@
             padding: 20px;
             border-radius: 5px;
             margin: 10px 20px;
-            border: 1px solid var(--secondary);
+            border: 1px solid var(--primary);
         }
 
         &-info {
@@ -23,7 +23,7 @@
             flex-direction: column;
 
             h2 {
-                border-bottom: 2px solid var(--secondary);
+                border-bottom: 2px solid var(--primary);
                 padding-bottom: 3px;
             }
         }
@@ -83,7 +83,7 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                background-image: linear-gradient(var(--secondary), var(--secondary));
+                background-image: linear-gradient(var(--primary), var(--primary));
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 0% 100%;
@@ -94,7 +94,7 @@
         &:hover {
             .project-card {
                 &-back {
-                    color: var(--secondary) !important;
+                    color: var(--primary) !important;
                     background-size: 100% 100%;
                     transition: all .3s ease-in-out;
 
@@ -113,7 +113,7 @@
 
             .project-card {
                 &-back {
-                    color: var(--secondary) !important;
+                    color: var(--primary) !important;
                     background-size: 100% 100%;
                     transition: all .3s ease-in-out;
 

@@ -24,9 +24,33 @@ body {
     height: 100%;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1,
+h2 {
+    letter-spacing: 1px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+    max-width: 1100px;
+    width: 100%;
+}
+
 p {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 strong {
@@ -34,7 +58,7 @@ strong {
 }
 
 a {
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 1px;
@@ -52,7 +76,7 @@ button {
     @include flexbox($placeContent: center, $placeItems: center);
     padding: 10px 30px;
     color: var(--white);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 4rem;
     // border: 0px solid var(--black);
     font-size: 20px;

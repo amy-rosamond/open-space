@@ -14,7 +14,7 @@
         }
 
         svg {
-            color: var(--secondary);
+            color: var(--primary);
             width: 18px;
         }
     }
@@ -40,7 +40,7 @@
     @include flexbox($placeContent: center, $placeItems: center, $direction: column);
     width: 100%;
     padding: 20px;
-    background-color: var(--primary);
+    background-color: var(--white);
 
     &-row {
         @include flexbox($placeContent: center, $placeItems: center);
@@ -54,7 +54,7 @@
 
     &-row:nth-child(odd) {
         .process:first-child {
-            // border-right: 2px solid var(--secondary);
+            // border-right: 2px solid var(--primary);
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
             border-top-right-radius: 0px;
@@ -68,7 +68,7 @@
         @include flexbox($direction: row-reverse);
 
         .process:first-child {
-            // border-left: 2px solid var(--secondary);
+            // border-left: 2px solid var(--primary);
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
             border-top-right-radius: 3px;
@@ -80,7 +80,7 @@
     &-count {
         @include flexbox($placeContent: center, $placeItems: center);
         width: 2px;
-        background-color: var(--secondary);
+        background-color: var(--primary);
         position: relative;
         align-self: stretch;
 
@@ -91,11 +91,11 @@
             border-radius: 50%;
             width: 80px;
             height: 80px;
-            border: 1px solid var(--secondary);
-            // box-shadow: 0 0 0 2px var(--secondary), 0 0 0 7px rgb(255 173 61), 0 0 0 12px rgb(255 200 125);
+            border: 1px solid var(--primary);
+            // box-shadow: 0 0 0 2px var(--primary), 0 0 0 7px rgb(255 173 61), 0 0 0 12px rgb(255 200 125);
 
             h3 {
-                color: var(--secondary);
+                color: var(--primary);
                 margin: 0;
                 font-size: 40px;
                 font-weight: 900;
@@ -111,7 +111,7 @@
 
         svg {
             width: 45px;
-            stroke: var(--secondary);
+            stroke: var(--primary);
         }
     }
 
